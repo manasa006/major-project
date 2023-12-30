@@ -1,0 +1,425 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+
+
+
+
+
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: white;
+  color: rgb(238, 230, 230);
+  justify-content: right;
+	border-radius: 15%;
+	border:3px solid black;
+}
+.about-section:hover {
+	background-color: transparent;
+	font-family: purisa;
+	color: white;
+	font-size: 120%;
+	border: 3px solid yellow;
+	animation-delay:0.5s;
+	animation-duration:0.5s;
+	animation-fill-mode:both;
+
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+ 
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+   justify-content: center;
+   align: center;
+}
+.img{
+	justify-content: right;
+	border: 2px solid black;
+}
+
+.button {
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+margin: 20px;
+
+}
+
+.button:hover {
+  background-color: green;
+	 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.icons{
+	float: right;
+	width:50%;
+	margin-right:20px;
+	height:40vh;
+	background-color: transparent;
+}
+	/*Whatsapp Icon Starting*/
+	
+.what{
+	float:left;
+	width:50px;
+	height:50px;
+	margin-left:50px;
+	margin-top:20%;
+	border-radius:50%;
+	background-color:black;
+	text-align:center;
+	justify-content:center;
+	border-image:linear-gradient(to left, black,white,black);
+	border-width:3px;
+	border-style:solid;
+	position:relative;
+	transition:transform 0.5s;
+	/*
+	filter: drop-shadow(0px 0px 4px rgba(77,255,3,1))
+		  drop-shadow(0px 0px 6px rgba(77,255,3,1))
+		  drop-shadow(0px 0px 10px rgba(77,255,3,1));*/
+	animation:sha 1s ease-in infinite; 
+	cursor:pointer;
+}
+@keyframes sha{
+	0%{
+		filter:drop-shadow(0px 0px 4px rgba(77,255,3,1))
+		  drop-shadow(0px 0px 4px rgba(77,255,3,1))
+		  drop-shadow(0px 0px 4px rgba(77,255,3,1));
+	}
+	50%{
+		filter:drop-shadow(0px 0px 4px rgba(77,255,3,1))
+		  drop-shadow(0px 0px 6px rgba(77,255,3,1))
+		  drop-shadow(0px 0px 10px rgba(77,255,3,1));
+	}
+	100%{
+		filter:drop-shadow(0px 0px 4px rgba(77,255,3,1))
+		  drop-shadow(0px 0px 4px rgba(77,255,3,1))
+		  drop-shadow(0px 0px 4px rgba(77,255,3,1));
+	}
+}
+.se{
+	margin-top:8px;
+	color: white;
+}
+.what:hover{
+	transform:translateY(-10px);
+}
+.what::after{
+	content:" ";
+	position: absolute;
+	top:80px;
+	left:-17px;
+	bottom:0px;
+	color: black;
+	font-weight: bold;
+	font-size:20px;
+}
+.what:hover::after{
+	content:"Whatsapp";
+}
+	
+	/*Whatsapp Icon Ending */	
+
+	/*FaceBook Icon Starting */
+.face{
+	float:left;
+	margin-left:70px;
+	margin-top:20%;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	background-color: black;
+	text-align:center;
+	justify-content:center;
+	border-image:linear-gradient(to left, red, green ,blue);
+	position: relative;
+	transition: transform 0.5s;
+	border-width:3px;
+	border-style: solid;
+	animation: fo 1s ease-in infinite;
+	cursor: pointer;
+}
+@keyframes fo{
+	0%{
+		filter:drop-shadow(0px 0px 4px rgba(0,0,255,1))
+		  drop-shadow(0px 0px 4px rgba(0,0,255,1))
+		  drop-shadow(0px 0px 4px rgba(0,0,255,1));
+	}
+	50%{
+		filter:drop-shadow(0px 0px 4px rgba(0,0,255,1))
+		  drop-shadow(0px 0px 6px rgba(0,0,255,1))
+		  drop-shadow(0px 0px 10px rgba(0,0,255,1));
+	}
+	100%{
+		filter:drop-shadow(0px 0px 4px rgba(0,0,255,1))
+		  drop-shadow(0px 0px 4px rgba(0,0,255,1))
+		  drop-shadow(0px 0px 4px rgba(0,0,255,1));
+	}
+}
+
+.fb{
+	margin-top:8px;
+	color:white;
+
+}
+.face:hover{
+	transform:translateY(-10px);
+}
+.face::after{
+	content:"";
+	position: absolute;
+	top:80px;
+	left:-10px;
+	bottom:0px;
+	font-size:20px;
+	color:white;
+	font-family: TimesNewRoman;
+	font-weight: bold;
+	font-style: italic;
+}
+.face:hover::after{
+	content:"Facebook";
+}
+
+	/*Facebook Icon Ending*/
+
+	/*Email Icon Starting */
+
+.email{
+	float:left;
+	margin-left:70px;
+	margin-top:20%;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	background-color: black;
+	text-align: center;
+	justify-content: center;
+	border-image:linear-gradient(to left, white,black,white);
+	border-width:4px;
+	border-style:solid;
+	cursor:pointer;
+	position:relative;
+	transition:transform 0.5s;
+	animation:ema 1s ease-in infinite;
+}
+
+@keyframes ema{
+	0%{
+		filter:drop-shadow(0px 0px 4px rgba(0,255,255,1))
+		  drop-shadow(0px 0px 4px rgba(0,255,255,1))
+		  drop-shadow(0px 0px 4px rgba(0,0,255,1));
+	}
+	50%{
+		filter:drop-shadow(0px 0px 4px rgba(0,255,255,1))
+		  drop-shadow(0px 0px 6px rgba(0,255,255,1))
+		  drop-shadow(0px 0px 10px rgba(0,0,255,1));
+	}
+	100%{
+		filter:drop-shadow(0px 0px 4px rgba(0,255,255,1))
+		  drop-shadow(0px 0px 4px rgba(0,255,255,1))
+		  drop-shadow(0px 0px 4px rgba(0,0,255,1));
+	}
+}
+
+.em{
+	margin-top:8px;
+	color: white;
+}	
+.email:hover{
+	transform:translateY(-10px);
+}
+
+.email::after{
+	content:"";
+	top:80px;
+	left:-2px;
+	bottom:0px;
+	font-size:20px;
+	font-weight:bold;
+	position:absolute;
+	color:black;
+}
+.email:hover::after{
+	content:"Email";
+}
+
+	/*Email Icon Endign */
+
+	/*Phone Icon stating */
+.phn{
+	float:left;
+	position:relative;
+	margin-left:70px;
+	margin-top:20%;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	background-color:black;
+	text-align:center;
+	border-image:linear-gradient(to left,red,white,red);
+	border-width:3px;
+	border-style:solid;
+	transition:transform 0.5s ;
+	animation:mob 1s ease-in infinite;
+	justify-content:center;
+	cursor:pointer;
+}	
+@keyframes mob{
+	0%{
+		filter:drop-shadow(0px 0px 4px rgba(255,0,0,1))
+		  drop-shadow(0px 0px 4px rgba(255,0,0,1))
+		  drop-shadow(0px 0px 4px rgba(255,0,0,1));
+	}
+	50%{
+		filter:drop-shadow(0px 0px 4px rgba(255,0,0,1))
+		  drop-shadow(0px 0px 6px rgba(255,0,0,1))
+		  drop-shadow(0px 0px 10px rgba(255,0,0,1));
+	}
+	100%{
+		filter:drop-shadow(0px 0px 4px rgba(255,0,0,1))
+		  drop-shadow(0px 0px 4px rgba(255,0,0,1))
+		  drop-shadow(0px 0px 4px rgba(255,0,0,1));
+	}
+}
+.ph{
+	margin-top:8px;
+	color:white;
+}
+.phn::after{
+	content:" ";
+	top:80px;
+	bottom:0px;
+	left:-34px;
+	font-size:20px;
+	position:absolute;
+	bottom:0px;
+	font-weight:bold;
+	color:white
+}
+.phn:hover{
+	transform:translateY(-10px);
+}
+.phn:hover::after{
+	content:"Mobile_Number";
+}
+
+	/* Phone Icon Ending*/
+	
+	/*Instagram Icon Starting */
+.insta{
+	float:left;
+	margin-left:70px;
+	margin-top:20%;
+	width:50px;
+	height:50px;
+	position:relative;
+	border-radius:50%;
+	background-color:black;
+	text-align:center;
+	justify-content:center;
+	border-image:linear-gradient(to left, #FF1493,white,#FF1493);
+	border-width:3px;
+	border-style:solid;
+	cursor:pointer;
+	transition:transform 0.5s ;
+	animation:ins 1s ease-in infinite;
+}	
+
+.insta::after{
+	content:'';
+	top:80px;
+	font-size:20px;
+	bottom:0px;
+	left:-15px;
+	position:absolute;
+	color:white;
+	font-weight:bold;
+}
+.insta:hover::after{
+	content:"Instagram";
+}
+
+@keyframes ins{
+		0%{
+		filter:drop-shadow(0px 0px 4px rgba(255,20,147,1))
+		  drop-shadow(0px 0px 4px rgba(255,20,147,1))
+		  drop-shadow(0px 0px 4px rgba(255,20,147,1));
+	}
+	50%{
+		filter:drop-shadow(0px 0px 4px rgba(255,20,147,1))
+		  drop-shadow(0px 0px 6px rgba(255,20,147,1))
+		  drop-shadow(0px 0px 10px rgba(255,20,147,1));
+	}
+	100%{
+		filter:drop-shadow(0px 0px 4px rgba(255,20,147,1))
+		  drop-shadow(0px 0px 4px rgba(255,20,147,1))
+		  drop-shadow(0px 0px 4px rgba(255,20,147,1));
+	}
+}
+		
+.in{
+	margin-top:8px;
+	color:white;
+}
+
+.insta:hover{
+	transform:translateY(-10px);
+}
+
+.marq{
+	font-size: 30px;
+	color: green;
+	background: black;
+	border-radius: 30px;
+	font-family: bold;
+height:8vh;
+	border-top-color: white;
+	border-top-width:1px;
+	border-top-style: solid;
+	background-color: black;
+	
+	justify-content:center;
+	text-align:center;
+
+}
